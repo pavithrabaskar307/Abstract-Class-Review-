@@ -1,1 +1,96 @@
+# Abstract Class Review and EditorReview
 
+## Title
+Publishing Review System Using Abstract Classes
+
+## Aim
+To implement an abstract `Review` class with an abstract method
+`publishReview()` and extend it using `EditorReview`.
+
+## Objective
+- To create an abstract class.
+- To declare an abstract method.
+- To extend the abstract class.
+- To implement the abstract method in the subclass.
+- To understand abstraction in Java.
+
+## Abstract
+This program demonstrates abstraction in Java using a publishing review system. The abstract class `Review` defines the method `publishReview()`, while the `EditorReview` class provides its implementation.
+
+## Introduction
+Abstraction is an OOP concept that hides implementation details and shows only essential functionality. In Java, abstract classes can contain abstract methods that must be implemented by their subclasses.
+
+## Problem Statement
+Define an abstract class `Review` with an abstract method `publishReview()`. Extend it using the `EditorReview` class and implement the method to display an editor's review.
+
+## Concepts Used
+- Abstract Class
+- Abstract Method
+- Inheritance
+- Method Overriding
+- Object Creation
+
+## Algorithm
+1. Start the program.
+2. Define an abstract class `Review`.
+3. Declare the abstract method `publishReview()`.
+4. Create the `EditorReview` subclass.
+5. Implement the `publishReview()` method.
+6. Create an `EditorReview` object.
+7. Call the method.
+8. Stop.
+
+## Program
+
+```java
+abstract class Review {
+    abstract void publishReview();
+}
+
+class EditorReview extends Review {
+    @Override
+    void publishReview() {
+        System.out.println(
+            "Editor Review: Article approved for publishing."
+        );
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        EditorReview review = new EditorReview();
+        review.publishReview();
+    }
+}
+```
+
+## Output
+
+```text
+Editor Review: Article approved for publishing.
+```
+
+## Result
+The abstract class `Review` and its subclass `EditorReview` were implemented successfully.
+
+## Conclusion
+Thus, abstraction was successfully demonstrated using an abstract class and method implementation.
+
+## How to Run
+
+1. Install Java JDK.
+2. Save the program as `Main.java`.
+3. Compile the program:
+
+```bash
+javac Main.java
+```
+
+4. Run the program:
+
+```bash
+java Main
+```
+
+## Author
+Pavithra
